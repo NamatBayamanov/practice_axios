@@ -1,6 +1,9 @@
 import axios from "axios";
 
+import {useNavigate} from "react-router-dom";
 function ArticleCreate() {
+
+  const navigate = useNavigate();
   const onSubmitForm = (event) => {
     event.preventDefault();
 
@@ -30,6 +33,10 @@ function ArticleCreate() {
         </div>
         <button>Send</button>
       </form>
+
+      <button onClick={() => navigate("/")}>
+        Come Back
+      </button>
     </div>
   );
 }
