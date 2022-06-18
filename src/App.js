@@ -4,7 +4,9 @@ import ArticleDelete from "./components/ArticleList/ArticleFull/ArticleDelete/Ar
 import ArticleFull from "./components/ArticleList/ArticleFull/ArticleFull";
 import ArticleUpdate from "./components/ArticleList/ArticleFull/ArticleUpdate/ArticleUpdate";
 import ArticleList from "./components/ArticleList/ArticleList";
+import List from "./components/List/List";
 import Navbar from "./components/Navbar/Navbar";
+import Todos from "./components/Todos/Todos";
 
 function App() {
 
@@ -23,6 +25,9 @@ function App() {
 
       </Routes>
 
+
+        <Todos/>
+        <List/>
     </div>
   );
 }
